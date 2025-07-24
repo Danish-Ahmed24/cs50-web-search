@@ -1,0 +1,25 @@
+$fontSize: 25px;
+$marginNavbarItems:20px;
+
+.navbar{
+    list-style: none;
+    
+    ul{
+        float: right;
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        margin: $marginNavbarItems;
+        list-style: none;
+        font-size: $fontSize;
+        
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    li:hover{
+        text-decoration: underline;
+    }
+}
