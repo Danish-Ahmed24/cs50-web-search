@@ -3,8 +3,8 @@ $marginNavbarItems: 40px;
 
 body {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+    justify-content: center;
 	height: 100vh;
 	flex-direction: column;
 	margin: 0;
@@ -56,4 +56,83 @@ body {
 	input {
 		margin: 10px;
 	}
+}
+
+
+
+.appbar {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start; // aligns label to the left
+  align-items: center;
+  font-size: 1.5rem;
+
+  label {
+    margin: 0;
+  }
+}
+.separator-line {
+	width: 100%;
+	height: 1px;
+    border-bottom: solid 1px #d6d6d6;
+}
+
+
+.advanced-search-container {
+    margin: 50px 40px;
+
+    label {
+        display: inline-block;
+        width: 16%;
+        font-size: 20px;
+    }
+
+    .whitespace {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        padding: 10px 0;
+
+        label {
+            width: 16%;
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            width: 49%;
+            padding: 2px 0;
+        }
+
+        .clarification {
+            font-size: 11px;
+            width: 30%;
+            margin-left: 1%;
+
+            .monospace {
+                font-family: monospace;
+            }
+        }
+
+        .right-align {
+            width: 50%;
+        }
+    }
+}
+
+.blue-button {
+        background-color: dodgerblue;
+        color: white;
+        font-size: smaller;
+        max-width: 200px;
+        border-radius: 0px;
+        border: 1px solid #156bbd;
+        float: right;
+        padding: 10px 2px;
+        margin: 0;
 }
